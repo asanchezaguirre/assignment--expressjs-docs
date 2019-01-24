@@ -14,11 +14,14 @@ html
 				a(href="http://localhost:3000/docs/products/item") GET / products /: id
 			div.item2
 				h2 GET / books /: id
-				p Endpoint
+				p ENDPOINT
 				p https://api.myownfancyproject.com/rest/v2/books/{id}
 				p You can retrieve the primary information about a book.
-				p ¿Cómo hacer una solicitud?
+				p REQUEST
+				p Path Parameters : id
+				p Example:
+				p https://api.myownfancyproject.com/rest/v2/books/14
 			div.item3
-				h2 Respuesta
+				h2 RESPONSE
 				p=JSON.stringify(bItem.data)
 
