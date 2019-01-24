@@ -1,0 +1,24 @@
+html
+	head
+	title Expressjs-docs
+	link(rel="stylesheet", href="/static/css/app.css")
+	body
+		h1 REST API
+		div.content
+			div.item1
+				p
+				a(href="http://localhost:3000/docs/books/list") GET / books
+				p
+				a(href="http://localhost:3000/docs/products/list") GET / products
+				p
+				a(href="http://localhost:3000/docs/products/item") GET / products /: id
+			div.item2
+				h2 GET / books /: id
+				p Endpoint
+				p https://api.myownfancyproject.com/rest/v2/books/{id}
+				p You can retrieve the primary information about a book.
+				p ¿Cómo hacer una solicitud?
+			div.item3
+				h2 Respuesta
+				p=JSON.stringify(bItem.data)
+

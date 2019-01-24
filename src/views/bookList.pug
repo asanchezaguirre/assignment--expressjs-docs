@@ -1,0 +1,24 @@
+html
+	head
+	title Expressjs-docs
+	link(rel="stylesheet", href="/static/css/app.css")
+	body
+		h1 REST API
+		div.content
+			div.item1
+				p
+				a(href="http://localhost:3000/docs/books/item") GET / books /: id
+				p
+				a(href="http://localhost:3000/docs/products/list") GET / products
+				p
+				a(href="http://localhost:3000/docs/products/item") GET / products /: id
+			div.item2
+				h2 GET / books
+				p Endpoint
+				p https://api.myownfancyproject.com/rest/v2/books
+				p You can retrieve a listing of all books.
+				p PATH PARAMETERS
+				p
+			div.item3
+				h2 Respuesta
+				p=JSON.stringify(bList.data)
